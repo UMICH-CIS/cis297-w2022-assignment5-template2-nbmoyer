@@ -112,9 +112,32 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Information.Text" xml:space="preserve">
+    <value>Press the corresponding to do the listed action to the data entered in the test box
+
+1) Return a string without the Whitespaces
+
+2) Reverse a string
+
+3) Display the quotient and the remainder (divident input 1. divisor input 2)
+
+4) Find the logarithm of a specified number to base 10
+
+5) Find the logarithm of a specified number to a specified base
+
+6) Display the minimum and maximum of the two numbers
+
+7) Find the specified number to the specified power
+
+8) Find the roots of a quadratic equation
+
+9) Find the square root of the given number
+
+10) Exit</value>
+  </data>
 </root>
