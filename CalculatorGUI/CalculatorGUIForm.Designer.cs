@@ -46,12 +46,14 @@
             this.resultLabel = new System.Windows.Forms.Label();
             this.inputTextBox2 = new System.Windows.Forms.TextBox();
             this.inputLabel2 = new System.Windows.Forms.Label();
+            this.inputLabel3 = new System.Windows.Forms.Label();
+            this.inputTextBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button10
             // 
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Location = new System.Drawing.Point(0, 106);
+            this.button10.Location = new System.Drawing.Point(0, 151);
             this.button10.Margin = new System.Windows.Forms.Padding(0);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(63, 50);
@@ -62,7 +64,7 @@
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(126, 256);
+            this.button3.Location = new System.Drawing.Point(126, 301);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(63, 50);
@@ -73,7 +75,7 @@
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(63, 256);
+            this.button2.Location = new System.Drawing.Point(63, 301);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(63, 50);
@@ -84,7 +86,7 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(0, 256);
+            this.button1.Location = new System.Drawing.Point(0, 301);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(63, 50);
@@ -95,7 +97,7 @@
             // button6
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(126, 206);
+            this.button6.Location = new System.Drawing.Point(126, 251);
             this.button6.Margin = new System.Windows.Forms.Padding(0);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(63, 50);
@@ -106,7 +108,7 @@
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(63, 206);
+            this.button5.Location = new System.Drawing.Point(63, 251);
             this.button5.Margin = new System.Windows.Forms.Padding(0);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(63, 50);
@@ -117,7 +119,7 @@
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(0, 206);
+            this.button4.Location = new System.Drawing.Point(0, 251);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(63, 50);
@@ -128,7 +130,7 @@
             // button9
             // 
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Location = new System.Drawing.Point(126, 156);
+            this.button9.Location = new System.Drawing.Point(126, 201);
             this.button9.Margin = new System.Windows.Forms.Padding(0);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(63, 50);
@@ -139,7 +141,7 @@
             // button8
             // 
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Location = new System.Drawing.Point(63, 156);
+            this.button8.Location = new System.Drawing.Point(63, 201);
             this.button8.Margin = new System.Windows.Forms.Padding(0);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(63, 50);
@@ -150,7 +152,7 @@
             // button7
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Location = new System.Drawing.Point(0, 156);
+            this.button7.Location = new System.Drawing.Point(0, 201);
             this.button7.Margin = new System.Windows.Forms.Padding(0);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(63, 50);
@@ -172,7 +174,7 @@
             this.Information.AutoSize = true;
             this.Information.Location = new System.Drawing.Point(258, 106);
             this.Information.Name = "Information";
-            this.Information.Size = new System.Drawing.Size(433, 315);
+            this.Information.Size = new System.Drawing.Size(502, 315);
             this.Information.TabIndex = 31;
             this.Information.Text = resources.GetString("Information.Text");
             this.Information.Click += new System.EventHandler(this.Information_Click);
@@ -221,11 +223,31 @@
             this.inputLabel2.TabIndex = 36;
             this.inputLabel2.Text = "Input 2 (used for options with two inputs)";
             // 
+            // inputLabel3
+            // 
+            this.inputLabel3.AutoSize = true;
+            this.inputLabel3.Location = new System.Drawing.Point(1, 103);
+            this.inputLabel3.Name = "inputLabel3";
+            this.inputLabel3.Size = new System.Drawing.Size(151, 15);
+            this.inputLabel3.TabIndex = 40;
+            this.inputLabel3.Text = "Input 3 (used for quadratic)";
+            // 
+            // inputTextBox3
+            // 
+            this.inputTextBox3.Location = new System.Drawing.Point(0, 122);
+            this.inputTextBox3.Multiline = true;
+            this.inputTextBox3.Name = "inputTextBox3";
+            this.inputTextBox3.Size = new System.Drawing.Size(252, 26);
+            this.inputTextBox3.TabIndex = 39;
+            this.inputTextBox3.TextChanged += new System.EventHandler(this.inputTextBox3_TextChanged);
+            // 
             // CalculatorGUIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 459);
+            this.ClientSize = new System.Drawing.Size(783, 459);
+            this.Controls.Add(this.inputLabel3);
+            this.Controls.Add(this.inputTextBox3);
             this.Controls.Add(this.inputLabel2);
             this.Controls.Add(this.inputTextBox2);
             this.Controls.Add(this.resultLabel);
@@ -269,6 +291,8 @@
         private System.Windows.Forms.Label resultLabel;
         private System.Windows.Forms.TextBox inputTextBox2;
         private System.Windows.Forms.Label inputLabel2;
+        private System.Windows.Forms.Label inputLabel3;
+        private System.Windows.Forms.TextBox inputTextBox3;
     }
 }
 

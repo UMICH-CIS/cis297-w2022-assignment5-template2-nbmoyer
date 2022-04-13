@@ -15,6 +15,7 @@ namespace CalculatorGUI
       {
          InitializeComponent();
       }
+
         /// <summary>
         /// 1.	Return a string without the Whitespaces
         /// </summary>
@@ -105,20 +106,41 @@ namespace CalculatorGUI
 
             resultTextbox.Text = $"{result}";
         }
-
+        /// <summary>
+        /// 8. Quadratic equation. Solves the roots for the quadratic equation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button8_Click(object sender, EventArgs e)
         {
             string input = inputTextBox.Text;
-            QuadraticEquation qe = new QuadraticEquation();
-            Console.WriteLine("Enter A");
-            qe.a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter B");
-            qe.b = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter C");
-            qe.c = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Quadratic Equation with  A: {qe.a}   B: {qe.b}  C: {qe.c}");
-            qe.DisplaySolution();
+            int a, b, c;
+
+            double d, x1, x2;
+            
+
+            a = Convert.ToInt32(inputTextBox.Text);
+            b = Convert.ToInt32(inputTextBox2.Text);
+            c = Convert.ToInt32(inputTextBox3.Text);
+
+            d = b * b - 4 * a * c;
+            if (d == 0)
+            {
+                x1 = -b / (2.0 * a);
+                x2 = x1;
+                resultTextbox.Text = $"Root 1 = {x1} Root 2 = {x2}";
+            }
+            else if (d > 0)
+            {
+                x1 = (-b + Math.Sqrt(d)) / (2 * a);
+                x2 = (-b - Math.Sqrt(d)) / (2 * a);
+
+                resultTextbox.Text = $"Root 1 = {x1} Root 2 = {x2}";
+            }
+            else
+                resultTextbox.Text = "Root are imeainary. No Solution.";
         }
+    
         /// <summary>
         /// 9. Sqrt-Square Root. This function returns the square root of the given number.
         /// </summary>
@@ -151,6 +173,11 @@ namespace CalculatorGUI
         }
 
         private void Information_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputTextBox3_TextChanged(object sender, EventArgs e)
         {
 
         }
